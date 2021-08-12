@@ -1,9 +1,8 @@
-import { Button, Icon, TextField } from "@material-ui/core";
-import { send } from "@material-ui/icons";
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import { Button, TextField } from "@material-ui/core";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import { useState, useEffect, useRef } from "react";
 
-function Foo(props) {
+export const Messaglist = () => {
   const [messageList, setMessageList] = useState([
     { value: "сообщение", name: "автор" },
   ]);
@@ -60,8 +59,6 @@ function Foo(props) {
       >
         send
       </Button>
-      
     </>
   );
-}
-export default Foo;
+};
